@@ -1,18 +1,12 @@
 import React from "react"
 
-import Header from "./Header"
+import NavBar from "./NavBar"
 
-function Layout({ children }) {
+export default function Layout({ children }) {
   return (
     <div>
-      <Header />
-      <>{children}</>
-
-      <footer>
-        <p>Built by PetriD</p>
-      </footer>
+      <NavBar />
+      {children}
     </div>
   )
 }
-
-export default Layout

@@ -2,15 +2,11 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-function HomePage() {
+export default function Home() {
   return (
     <Layout>
-      <div>
-        <h1>Home Page</h1>
-        <p>Home page stuff goes here!!!!</p>
-      </div>
+      <h1>Home Page</h1>
+      <h2>Projects</h2>
     </Layout>
   )
 }
-
-export default HomePage
