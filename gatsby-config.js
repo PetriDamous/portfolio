@@ -6,10 +6,20 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects_data`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "PetriD Warrior",
     description: "My portfolio",
     copywrite: "Copywrite 2021",
+    contact: "dimtri.williams.6448@gmail.com",
   },
 }
