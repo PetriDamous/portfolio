@@ -1,13 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/Layout"
 
-export default function Home() {
+export default function Home({ data }) {
+  const { title, description } = data.site.siteMetadata
   return (
     <Layout>
       <h1>Home Page</h1>
-
+      <p>
+        {title} - {description}
+      </p>
       <section>
         <h2>About</h2>
         <Link to="/about">Read More</Link>
@@ -29,3 +32,15 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query siteInfo {
+    site {
+      siteMetadata {
+        copywrite
+        description
+        title
+      }
+    }
+  }
+`

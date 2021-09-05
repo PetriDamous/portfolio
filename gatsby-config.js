@@ -7,4 +7,9 @@
 module.exports = {
   /* Your site config here */
   plugins: [],
+  siteMetadata: {
+    title: "PetriD Warrior",
+    description: "My portfolio",
+    copywrite: "Copywrite 2021",
+  },
 }
