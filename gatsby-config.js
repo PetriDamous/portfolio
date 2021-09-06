@@ -18,6 +18,13 @@ module.exports = {
         path: `${__dirname}/src/projects_data`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
   ],
   siteMetadata: {
     title: "PetriD Warrior",

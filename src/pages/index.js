@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
 
@@ -11,6 +12,11 @@ export default function Home({ data }) {
       <p>
         {title} - {description}
       </p>
+
+      <div style={{ width: "20em" }}>
+        <StaticImage src="../images/banner.png" alt="Site banner" />
+      </div>
+
       <section>
         <h2>About</h2>
         <Link to="/about">Read More</Link>
