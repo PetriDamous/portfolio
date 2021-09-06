@@ -20,6 +20,7 @@ module.exports = {
     title: "PetriD Warrior",
     description: "My portfolio",
     copywrite: "Copywrite 2021",
-    contact: "dimtri.williams.6448@gmail.com",
+    email: "dimtri.williams.6448@gmail.com",
+    gitHub: "https://github.com/PetriDamous",
   },
 }

@@ -14,21 +14,14 @@ export default function Home({ data }) {
       <section>
         <h2>About</h2>
         <Link to="/about">Read More</Link>
-      </section>
-
-      <section>
         <h2>Skills</h2>
+        <Link to="/projects">View Projects</Link>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <Link to="/projects">View More</Link>
-      </section>
-
-      <section>
+      {/* <section>
         <h2>Coding Challenges</h2>
         <Link to="/codingChallenges">View More</Link>
-      </section>
+      </section> */}
     </Layout>
   )
 }

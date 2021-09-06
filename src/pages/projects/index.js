@@ -6,7 +6,7 @@ import Layout from "../../components/Layout"
 export default function index({ data }) {
   const projectsArray = data.projects.nodes
 
-  const contact = data.contact.siteMetadata.contact
+  const contact = data.email.siteMetadata.email
 
   return (
     <Layout>
@@ -38,9 +38,9 @@ export const query = graphql`
         id
       }
     }
-    contact: site {
+    email: site {
       siteMetadata {
-        contact
+        email
       }
     }
   }
